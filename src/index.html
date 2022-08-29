@@ -1,0 +1,377 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  <link rel="stylesheet" href="../dist/output.css" />
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="font-Poppins dark:bg-slate-800 bg-slate-50">
+  <nav class="p-5 md:flex md:items-center md:justify-between">
+    <div class="flex flex-1 justify-between items-center ">
+      <img class="w-40" src="./imgs/Inbuiltweb.png" alt="" />
+
+      <div class="">
+        <img src="./imgs/moon.svg" alt="" class="moon cursor-pointer w-8 inline-block">
+        <span class="sun cursor-pointer w-8 inline-block">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+          </svg>        
+        </span>
+      </div>
+
+      <span class="text-3xl cursor-pointer mx-2 md:hidden block dark:text-slate-300">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    </div>
+
+    <ul class="md:flex md:items-center dark:bg-slate-800 bg-slate-50 md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 top-[-400px]">
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class="text-xl dark:text-slate-300 hover:text-cyan-500 duration-500">Home</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class="text-xl dark:text-slate-300 hover:text-cyan-500 duration-500">Services</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class="text-xl dark:text-slate-300 hover:text-cyan-500 duration-500">About</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class="text-xl dark:text-slate-300 hover:text-cyan-500 duration-500">Contact</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class="text-xl dark:text-slate-300 hover:text-cyan-500 duration-500">Blog</a>
+      </li>
+
+      <button class="bg-blue-600 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded ">
+        Console
+      </button>
+      <h2 class=""></h2>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="flex justify-center">
+    <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">
+      <!-- Content -->
+      <div class="flex flex-1 flex-col items-center lg:items-start">
+        <h2 class="text-bookmark-blue text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6 dark:text-slate-300">
+          Your Project, Our Service
+        </h2>
+        <p class="text-bookmark-grey text-lg text-center lg:text-left mb-6 dark:text-slate-300">
+          Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+        </p>
+        <div class="flex justify-center flex-wrap gap-6">
+          <button type="button" class="py-2 px-3 rounded-lg sm:ml-1 btn bg-yellow-400 hover:bg-bookmark-white hover:text-black">
+            Explore Courses
+          </button>
+          <button type="button" class=" py-2 px-3 rounded-lg shadow-lg sm:mr-1 btn text-black hover:bg-yellow-400 dark:bg-slate-700 hover:text-slate-900">
+            Read Articles
+          </button>
+        </div>
+      </div>
+      <!-- Image -->
+      <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0">
+        <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="./imgs/hero-bg.png" alt="" />
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- Features -->
+  <section class="py-20 mt-20 lg:mt-60 flex justify-center">
+
+    <div>
+    <!-- Heading -->
+    <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+      <h1 class="text-3xl text-center text-bookmark-blue dark:text-slate-100">Our Services</h1>
+      <p class="text-center text-bookmark-grey dark:text-slate-200 mt-4">
+        Our aim is to build a website your users will love. And also provide a guide to people in the programming world through our tutorials and articles.
+      </p>
+    </div>
+    <!-- Feature #1 -->
+    <div class="relative mt-20 lg:mt-24">
+      <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+        <!-- Image -->
+        <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+          <img
+            class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+            src="./imgs/web.svg"
+            alt=""
+          />
+        </div>
+        <!-- Content -->
+        <div class="flex flex-1 flex-col items-center lg:items-start">
+          <h1 class="text-3xl text-bookmark-blue dark:text-slate-100">Web/App design</h1>
+          <p class="text-bookmark-grey dark:text-slate-200 my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+            We offer quality static and dynamic websites/applications, automate your manual functions to improve 
+              your market and ease your customers experience.
+          </p>
+          <button type="button" class="btn py-2 px-3 rounded-lg btn bg-yellow-400 hover:bg-bookmark-white hover:text-black">More Info</button>
+        </div>
+      </div>
+      <!-- Rounded Rectangle -->
+      <div
+        class="
+          hidden
+          lg:block
+          overflow-hidden
+          bg-bookmark-purple
+          rounded-r-full
+          absolute
+          h-80
+          w-2/4
+          -bottom-24
+          -left-36
+        "
+      ></div>
+    </div>
+    <!-- Feature #2 -->
+    <div class="relative mt-20 lg:mt-52">
+      <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
+        <!-- Image -->
+        <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+          <img
+            class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+            src="./imgs/tutorial.svg"
+            alt=""
+          />
+        </div>
+        <!-- Content -->
+        <div class="flex flex-1 flex-col items-center lg:items-start">
+          <h1 class="text-3xl text-bookmark-blue dark:text-slate-100">Web/App courses</h1>
+          <p class="text-bookmark-grey dark:text-slate-200 my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+            We provide free tutorials and paid courses on website and application development.
+          </p>
+          <button type="button" class="btn py-2 px-3 rounded-lg bg-yellow-400 hover:bg-bookmark-white hover:text-black">More Info</button>
+        </div>
+      </div>
+      <!-- Rounded Rectangle -->
+      <div
+      class="
+        hidden
+        lg:block
+        overflow-hidden
+        bg-bookmark-purple
+        rounded-l-full
+        absolute
+        h-80
+        w-2/4
+        top-32
+        right-0
+        lg:
+        -bottom-28
+      "
+    ></div>
+    </div>
+    <!-- Feature #3 -->
+    <div class="relative mt-20 lg:mt-52">
+      <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+        <!-- Image -->
+        <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+          <img
+            class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+            src="./imgs/seo.svg"
+            alt=""
+          />
+        </div>
+        <!-- Content -->
+        <div class="flex flex-1 flex-col items-center lg:items-start">
+          <h1 class="text-3xl text-bookmark-blue dark:text-slate-300">Consultancy/SEO</h1>
+          <p class="text-bookmark-grey dark:text-slate-300 my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+            WIth our skiils we make it possible to cover your needs in the following areas; 
+            <br/>SEO, Google adsense, Error debugging, Project assistance
+          </p>
+          <button type="button" class="btn py-2 px-3 rounded-lg btn bg-yellow-400 hover:bg-bookmark-white hover:text-black">More Info</button>
+        </div>
+      </div>
+      <!-- Rounded Rectangle -->
+      <div
+        class="
+          hidden
+          lg:block
+          overflow-hidden
+          bg-bookmark-purple
+          rounded-r-full
+          absolute
+          h-80
+          w-2/4
+          -bottom-24
+          -left-36
+        "
+      ></div>
+    </div>
+  </div>
+  </section>
+
+  <!-- Download -->
+  <section class="py-20 mt-20 flex justify-center">
+    <div>
+    <!-- Heading -->
+    <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+      <h1 class="text-4xl text-center text-bookmark-blue underline dark:text-slate-200">Testimonials</h1>
+      <p class="text-center text-bookmark-grey mt-4 dark:text-slate-300">
+        Don't take our words for it. Listen to our clients.
+      </p>
+    </div>
+    <!-- Cards -->
+    <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg mt-16">
+
+      <!-- Card 1 -->
+      <figure class="rounded-xl shadow-xl p-8 dark:bg-slate-800">
+        <img class="w-24 h-24 rounded-full mx-auto" src="./imgs/Ignatius_Ogbaga.jpg" alt="" width="384" height="512">
+        <div class="pt-6 text-center space-y-4">
+          <blockquote>
+            <p class="text-base font-normal text-bookmark-grey dark:text-slate-300">
+              Inbuiltweb is a very reliable web development company with very deep technical knowledge. We have no regrets choosing Inbuiltweb
+            </p>
+          </blockquote>
+          <figcaption class="font-medium">
+            <div class="text-blue-500 dark:text-sky-400">
+              Dr. Ignatius Ogbaga
+            </div>
+            <div class="text-bookmark-grey dark:text-slate-300">
+              CEO, Bestsoft Technologies
+            </div>
+          </figcaption>
+        </div>
+      </figure>
+
+
+      <!-- Card 2 -->
+      <figure class="rounded-xl shadow-xl p-8 dark:bg-slate-800">
+        <img class="w-24 h-24 rounded-full mx-auto" src="./imgs/Nwuna_Emelda.jpg" alt="" width="384" height="512">
+        <div class="pt-6 text-center space-y-4">
+          <blockquote>
+            <p class="text-base font-normal text-bookmark-grey dark:text-slate-300">
+              Our business and hunger to assist women has been made super easy through the help of Inbuiltweb, their support and assistance is superb. 
+            </p>
+          </blockquote>
+          <figcaption class="font-medium">
+            <div class="text-blue-500  dark:text-sky-400">
+              Nwuna Emelda
+            </div>
+            <div class="text-bookmark-grey  dark:text-slate-300">
+              Founder, Legitmum
+            </div>
+          </figcaption>
+        </div>
+      </figure>
+
+
+      <!-- Card 3 -->
+      <figure class="rounded-xl shadow-xl p-8 dark:bg-slate-800">
+        <img class="w-24 h-24 rounded-full mx-auto" src="./imgs/Nweke_Collins.jpg" alt="" width="384" height="512">
+        <div class="pt-6 text-center space-y-4">
+          <blockquote>
+            <p class="text-base font-normal text-bookmark-grey dark:text-slate-300">
+              As a startup, it is required to keep costs low as much as possible while getting the most value for our money, Inbuiltweb offered both to us.
+            </p>
+          </blockquote>
+          <figcaption class="font-medium">
+            <div class="text-blue-500 dark:text-sky-400">
+              Nweke Collins
+            </div>
+            <div class="text-bookmark-grey dark:text-slate-300">
+              Founder, Buzzverg
+            </div>
+          </figcaption>
+        </div>
+      </figure>
+      </div>
+      
+    </div>
+  </div>
+  </section>
+
+  
+
+  <!-- FAQ -->
+  <section class="py-20 flex justify-center">
+    <div class="container">
+      <!-- Heading -->
+      <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+        <h1 class="text-3xl text-center text-bookmark-blue dark:text-slate-300">Frequently Asked Questions</h1>
+        <p class="text-center text-bookmark-grey dark:text-slate-300 mt-4">
+          Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.
+        </p>
+      </div>
+      <!-- FAQ Items -->
+      <div class="flex flex-col sm:w-3/4 lg:w-5/12 mt-12 mx-auto">
+        <div class="flex items-center border-b py-4">
+          <span class="flex-1 dark:text-slate-300">How long has inbuiltweb been operating?</span>
+          <i class="text-bookmark-purple fas fa-chevron-down"></i>
+        </div>
+        <div class="flex items-center border-b py-4">
+          <span class="flex-1 dark:text-slate-300">What does inbuiltweb do?</span>
+          <i class="text-bookmark-purple fas fa-chevron-down"></i>
+        </div>
+        <div class="flex items-center border-b py-4">
+          <span class="flex-1 dark:text-slate-300">Is there a mobile app?</span>
+          <i class="text-bookmark-purple fas fa-chevron-down"></i>
+        </div>
+        <div class="flex items-center border-b py-4">
+          <span class="flex-1 dark:text-slate-300">Why should i Use inbuiltweb?</span>
+          <i class="text-bookmark-purple fas fa-chevron-down"></i>
+        </div>
+        <button type="button" class="mt-12 py-2 px-3 rounded-lg flex self-center btn bg-yellow-400 hover:bg-bookmark-white hover:text-black">
+          More Info
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us -->
+  <section class="bg-bookmark-blue dark:bg-slate-900 text-white py-20">
+    <div class="container">
+      <div class="sm:w-3/4 lg:w-2/4 mx-auto">
+        <p class="font-light uppercase text-center mb-8 dark:text-slate-300">35,000+ ALREADY JOINED</p>
+        <h1 class="text-3xl text-center dark:text-slate-300">Stay up-to-date with what we’re doing</h1>
+        <div class="flex flex-col sm:flex-row gap-6 mt-8">
+          <input
+            type="text"
+            placeholder="Enter your email address"
+            class="focus:outline-none flex-1 px-2 py-3 rounded-md text-black"
+          />
+          <button type="button" class="btn px-2 py-3 bg-bookmark-red rounded-lg hover:bg-bookmark-white hover:text-black">
+            Contact Us
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-bookmark-blue dark:bg-slate-900 py-8">
+    <div class="container flex flex-col md:flex-row items-center">
+      <div class="flex flex-1 flex-wrap items-center justify-center md:justify-start gap-12">
+        <img src="./imgs/Inbuiltweb.png" class="w-40" alt="" />
+      </div>
+      <div class="flex gap-10 mt-12 md:mt-0">
+        <p><i class="text-white text-2xl fab fa-twitter"></i></p>
+        <p><i class="text-white text-2xl fab fa-facebook-square"></i></p>
+        <p><i class="text-white text-2xl fab fa-youtube"></i></p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]')) :( e.name = "menu" ,list.classList.remove('top-[80px]'))
+    }
+  </script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
